@@ -1,15 +1,141 @@
 body {
-    margin: 25px;
-    background-color: rgb(240, 240, 240);
+    margin: 0px;
+    background-color: #f5f7f9;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #17678e;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
     font-family: arial, sans-serif;
     font-size: 14px;
 }
 
+footer {
+    display: flex;
+    background-color: #112e51;
+    color: rgba(255, 255, 255, 0.9);
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px 30px;
+    align-items: flex-start;
+}
+
+h1 {
+    width: 100%;
+}
+
 div {
-    background-color: turquoise;
-    color: red;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 80%;
+}
+
+nav {
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer > nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+footer > nav:nth-child(6) {
+    width: 100%;
+    justify-content: center;
+}
+
+nav > a {
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+nav > ul {
+    margin: 0px;
+    align-items: flex-start;
+}
+
+ul > li {
+    margin: 10px 0px;
+}
+
+nav > ul > li:nth-child(1) {
+    font-weight: 600;
 }
 
 p {
     color: red;
+}
+
+.updatesbox {
+    background-color: #17678e;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav > ul {
+        flex-direction: row;
+    }
+
+    footer > nav > ul {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    footer > nav {
+        max-width: 25%;
+    }
+    footer > nav:nth-child(6) {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    footer > nav {
+        max-width: 16.666667%;
+    }
+
+    footer > nav:nth-child(6) {
+        max-width: 33.33333%;
+    }
 }
