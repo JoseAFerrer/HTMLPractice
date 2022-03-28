@@ -5,20 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>A copy</title>
         <link rel="stylesheet" href="Jose.css" />
+        <link rel="stylesheet" href="Cards.css" />
         <script src="Jose.html"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <img
                 src="https://codepip.com/wp-content/plugins/codepip/images/logotype.svg"
                 alt="Codepip Logo"
-                height="24px"
+                width="130px"
             />
             <nav>
                 <ul>
@@ -35,89 +33,129 @@
             </nav>
         </header>
         <main>
-            <section>
-                Flexbox Froggy Pro
-                <p>
-                    This should be a box with info about the game that we love
-                    so much.
-                </p>
+            <section id="SingleGame">
+                <div class="gameContainer">
+                    <div>
+                        <img 
+                            class="gamePic"
+                            src="https://codepip.com/wp-content/plugins/codepip/images/screenshots/flexbox-froggy-pro.png"
+                            alt="Frogs in a pond"
+                         />
+                    </div>
+                    <div class="gameCard">
+                        <div class="gameBody">
+                            <h2 class="gameTitle">Flexbox Froggy Pro</h2> 
+                            <div class="gameTags">
+                                <div class="gameTagsGroup">
+                                    <span class="gameTag">CSS</span>
+                                    <span class="gameTag">FLEXBOX</span>
+                                </div>
+                                <span class="gameTag">PRO</span>
+                            </div>
+                            <p>Now that you've learned the fundamentals of CSS flexbox, it's time to become a master. Face endless rounds of practice, with levels that ramp up in difficulty and pinpoint your weaknesses. Game reports also help you reflect on your progress. Flexbox Froggy Pro introduces 8 ponds, each with a mix of 20 levels. Replay a pond and face completely new levels each time. Challenge yourself to beat them all!</p>
+                            <h3>Learning objectives</h3>
+                            <p>Practice and improve recall of CSS flexbox properties and values.</p>
+                            <h3>Prerequisites</h3>
+                            <p>For those experienced of CSS flexbox. You should complete Flexbox Froggy for an introduction before playing this game.</p>
+                        </div>
+                    </div>
+                    <div class="gameFooter">Register sth sth</div>
+                </div>
             </section>
-            <section>
-                More games
-                <ul>
-                    <li>Sherlock Scopes</li>
-                    <li>CSS Scoops</li>
-                    <li>Pathfinder</li>
-                </ul>
+            <section id="More games">
+                <div class="gameContainer">
+                    Sherlock Scopes
+                </div>
+                <div class="gameContainer">
+                    CSS Scoops
+                </div>
+                <div class="gameContainer">
+                    Pathfinder
+                </div>
             </section>
-            <section class="updatesbox">UPDATES</section>
+            <section class="subscribe">
+                <div class="subscribeContainer">
+                    <h2>Get the latest updates</h2>
+                    <p>
+                        Enter your email to hear about new games and exclusive
+                        offers.
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Write your email here"></input>
+                        <input type="submit" value="Subscribe"></input>
+                        <div class="small">You can unsubscribe at any time.</div>
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
-            <h1>
-                <img
-                    src="https://codepip.com/wp-content/plugins/codepip/images/logotype.svg"
-                    alt="Codepip Logo"
-                    height="40px"
-                />
-            </h1>
-            <nav>
-                <ul>
-                    <li>CODEPIP</li>
-                    <li>About us</li>
-                    <li>Blog</li>
-                    <li>Pricing</li>
-                    <li>Curriculum</li>
-                    <li>Press</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>FEATURES</li>
-                    <li>Games</li>
-                    <li>Individual Plans</li>
-                    <li>Group Plans</li>
-                    <li>Classroom</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>SUPPORT</li>
-                    <li>FAQ</li>
-                    <li>Contact Us</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Service</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>FOLLOW</li>
-                    <li>Twitter</li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>LinkedIn</li>
-                    <li>YouTube</li>
-                    <li>RSS</li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li>Latest</li>
-                    <li>
-                        Reach your resources with Pathfinder, a game of
-                        constructing file paths
-                    </li>
-                    <li>Treat yourself to selectors with CSS Scoops</li>
-                    <li>
-                        Organize emoji with Disarray, a coding game about
-                        JavaScript array methods
-                    </li>
-                    <li>
-                        Dig deep about the :nth-child() selector with our newest
-                        CSS game, Nth Cart
-                    </li>
-                </ul>
-            </nav>
-            <div>© 2022 Codepip. All rights reserved.</div>
+            <div class="footerContainer">
+                <h1>
+                    <img
+                        src="https://codepip.com/wp-content/plugins/codepip/images/logotype.svg"
+                        alt="Codepip Logo"
+                        height="40px"
+                    />
+                </h1>
+                <nav>
+                    <ul>
+                        <li>CODEPIP</li>
+                        <li>About us</li>
+                        <li>Blog</li>
+                        <li>Pricing</li>
+                        <li>Curriculum</li>
+                        <li>Press</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>FEATURES</li>
+                        <li>Games</li>
+                        <li>Individual Plans</li>
+                        <li>Group Plans</li>
+                        <li>Classroom</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>SUPPORT</li>
+                        <li>FAQ</li>
+                        <li>Contact Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>FOLLOW</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                        <li>YouTube</li>
+                        <li>RSS</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>Latest</li>
+                        <li>
+                            Reach your resources with Pathfinder, a game of
+                            constructing file paths
+                        </li>
+                        <li>Treat yourself to selectors with CSS Scoops</li>
+                        <li>
+                            Organize emoji with Disarray, a coding game about
+                            JavaScript array methods
+                        </li>
+                        <li>
+                            Dig deep about the :nth-child() selector with our
+                            newest CSS game, Nth Cart
+                        </li>
+                    </ul>
+                </nav>
+                <div class="small">© 2022 Codepip. All rights reserved.</div>
+            </div>
         </footer>
     </body>
 </html>

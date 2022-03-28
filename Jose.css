@@ -16,9 +16,12 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
-    font-family: arial, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
+}
+
+section {
+    padding: 54px 0px;
 }
 
 footer {
@@ -29,6 +32,7 @@ footer {
     justify-content: center;
     padding: 70px 30px;
     align-items: flex-start;
+    font-size: 18px;
 }
 
 h1 {
@@ -39,7 +43,11 @@ div {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    font-size: 80%;
+}
+
+.small {
+    width: 100%;
+    display: flex;
 }
 
 nav {
@@ -51,14 +59,89 @@ nav {
     flex-wrap: wrap;
 }
 
-footer > nav {
+h2 {
+    margin: 0px 0px 6.4px 0px;
+    font-size: 1.3rem;
+}
+
+p {
+    margin: 0px 0px 1rem 0px;
+    font-size: 14px;
+    font-weight: 300;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.subscribe {
+    padding: 3em 0px;
+    background-color: #17678e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subscribeContainer {
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 32px;
+}
+
+form > div {
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 15px;
+}
+
+input[type="text"] {
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    font-size: 1.25rem;
+    color: #495057;
+}
+
+::placeholder {
+    color: #b0b6bb;
+}
+
+input[type="submit"] {
+    margin: 1rem 0px;
+    background-color: #17a2b8;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.footerContainer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+footer > div > nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 50%;
 }
 
-footer > nav:nth-child(6) {
+footer > div > nav:nth-child(6) {
     width: 100%;
     justify-content: center;
 }
@@ -91,10 +174,6 @@ nav > ul > li:nth-child(1) {
     font-weight: 600;
 }
 
-p {
-    color: red;
-}
-
 .updatesbox {
     background-color: #17678e;
 }
@@ -112,7 +191,7 @@ p {
         flex-direction: row;
     }
 
-    footer > nav > ul {
+    footer > div > nav > ul {
         flex-direction: column;
     }
 
@@ -120,10 +199,10 @@ p {
         flex-direction: row;
     }
 
-    footer > nav {
+    footer > div > nav {
         max-width: 25%;
     }
-    footer > nav:nth-child(6) {
+    footer > div > nav:nth-child(6) {
         max-width: 100%;
         width: 100%;
         justify-content: center;
@@ -131,11 +210,18 @@ p {
 }
 
 @media (min-width: 992px) {
-    footer > nav {
+    footer > div > nav {
         max-width: 16.666667%;
     }
 
-    footer > nav:nth-child(6) {
+    footer > div > nav:nth-child(6) {
         max-width: 33.33333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footerContainer {
+        max-width: 1140px;
+        justify-self: center;
     }
 }
