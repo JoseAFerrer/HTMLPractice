@@ -22,6 +22,7 @@ main {
 
 section {
     padding: 54px 0px;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -89,6 +90,11 @@ p {
     align-items: center;
     justify-content: center;
     padding: 0px 32px;
+}
+
+.subscribeContainer > p {
+    text-align: center;
+    align-self: center;
 }
 
 form > div {

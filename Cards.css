@@ -9,6 +9,29 @@
     border-radius: 5px;
 }
 
+.singleGame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.otherGames {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.otherGames > h2 {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.otherGames > .gameContainer {
+    width: 100%;
+    min-width: 240px;
+    max-width: 496px;
+}
+
 .firstOtherGame {
     background-color: #227b7b;
 }
@@ -141,5 +164,29 @@
 @media (min-width: 400px) {
     .gameFooter {
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 695px) {
+    .otherGames > .gameContainer {
+        width: 40%;
+        min-width: 210px;
+        max-width: 496px;
+    }
+}
+
+@media (min-width: 992px) {
+    .singleGame > .gameContainer {
+        width: 100%;
+        min-width: 289px;
+        max-width: 1150px;
+    }
+}
+
+@media (min-width: 1423px) {
+    .otherGames > .gameContainer {
+        width: 30%;
+        min-width: 289px;
+        max-width: 400px;
     }
 }
