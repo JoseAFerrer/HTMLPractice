@@ -6,3 +6,5 @@ The final goal is to reproduce the look (and behavior) of another page: https://
 Note how things change depending on the width of the page.
 
 Also, the page doesn't always look the same way, because the games are randomly chosen. This means what I reproduce here might not be exactly what you see on the page, but the important bit is that it looks the same way.
+
+Another limitation: the Share button doesn't work because it needs a modal and that is beyond the scope of this simple work.

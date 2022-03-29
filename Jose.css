@@ -49,6 +49,8 @@ div {
 .small {
     width: 100%;
     display: flex;
+    font-size: 14px;
+    margin: 0px 5px;
 }
 
 nav {
@@ -154,10 +156,17 @@ footer > div > nav:nth-child(6) {
     justify-content: center;
 }
 
-nav > a {
+a {
     color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    text-decoration: none;
     display: flex;
     justify-content: center;
+}
+
+p > a {
+    display: inline;
+    text-decoration: underline;
 }
 
 ul {
@@ -175,7 +184,7 @@ nav > ul {
 }
 
 ul > li {
-    margin: 10px 0px;
+    margin: 10px 5px;
 }
 
 nav > ul > li:nth-child(1) {
