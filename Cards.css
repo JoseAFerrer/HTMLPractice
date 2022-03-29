@@ -1,10 +1,23 @@
 .gameContainer {
+    position: relative;
     flex-flow: column;
     align-items: center;
     width: auto;
-    margin: 0px 34px;
+    margin: 0px 34px 15px 34px;
     background-color: #1b4d5c;
     color: white;
+}
+
+.firstOtherGame {
+    background-color: #227b7b;
+}
+
+.secondOtherGame {
+    background-color: #2c2826;
+}
+
+.thirdOtherGame {
+    background-color: #576b78;
 }
 
 .gameContainer > div {
@@ -38,6 +51,7 @@
 .gameTagsGroup {
     width: auto;
     justify-content: flex-start;
+    margin: 0px 4px;
 }
 
 .gameTag {
@@ -48,6 +62,21 @@
     border: none;
     padding: 5px 10px;
     font-size: 12px;
+    margin: 0px 4px;
+}
+
+.tagOverCardImage {
+    background-color: #f3406a;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    margin-left: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.gameTagsGroup > .gameTag {
+    margin: 0px;
 }
 
 .gameTagsGroup > :nth-child(1).gameTag {
@@ -56,7 +85,6 @@
 .gameTagsGroup > :nth-child(2).gameTag {
     border-radius: 0px 12px 12px 0px;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
-    margin-right: 1em;
 }
 
 .gameFooterContainer {
@@ -70,6 +98,10 @@
     margin: 0.75rem 1.25rem;
     color: white;
     flex-wrap: wrap;
+}
+
+.otherGameFooter {
+    margin: 1.5rem 1.25rem;
 }
 
 .gameBody > h3 {
@@ -93,6 +125,13 @@
 
 .gameFooter > :nth-child(3).button {
     background-color: #f3406a;
+}
+
+.moreGamesDescription {
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0px;
 }
 
 @media (min-width: 400px) {
