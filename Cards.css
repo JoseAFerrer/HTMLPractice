@@ -6,6 +6,7 @@
     margin: 0px 34px 15px 34px;
     background-color: #1b4d5c;
     color: white;
+    border-radius: 5px;
 }
 
 .firstOtherGame {
@@ -28,6 +29,7 @@
     height: 193px;
     width: 100%;
     object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .gameBody {
@@ -90,6 +92,7 @@
 .gameFooterContainer {
     justify-content: center;
     background-color: rgb(0 0 0 / 15%);
+    border-radius: 0px 0px 5px 5px;
 }
 
 .gameFooter {
@@ -98,6 +101,7 @@
     margin: 0.75rem 1.25rem;
     color: white;
     flex-wrap: wrap;
+    border-radius: 5px;
 }
 
 .otherGameFooter {
